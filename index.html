@@ -15,24 +15,22 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800&display=swap" media="print" onload="this.media='all'">
 
 <style>
-  :root{
-    --charcoal:#201E1B;
-    --charcoal-2:#2B2824;
-    --plaster:#F3EEE4;
-    --plaster-2:#E8E1D2;
-    --cement:#8A8478;
-    --brick:#B5502E;
-    --amber:#F0A63B;
-    --whatsapp:#25D366;
-    --whatsapp-dark:#1DA851;
-    --radius:14px;
-  }
-  *{box-sizing:border-box; margin:0; padding:0;}
-  html{scroll-behavior:smooth;}
-  @media (prefers-reduced-motion: reduce){
-    html{scroll-behavior:auto;}
-    *{animation-duration:.001ms !important; transition-duration:.001ms !important;}
-  }
+ .hero-image {
+  width: 100%;
+  min-height: 100vh;
+  background: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.hero-image img {
+  width: 100%;
+  height: 100vh;
+  object-fit: contain;
+  display: block;
+}
   body{
     font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
     background:var(--plaster);
@@ -277,26 +275,12 @@
 <body>
 
 <!-- ============ HERO: nothing but the WhatsApp CTA fills the first screen ============ -->
-<section class="hero" id="top">
-  <p class="hero-eyebrow">dimand</p>
-  <h1>Renovation, <span>Done Right.</span></h1>
-  <p class="sub">Homes &amp; offices across Hissar — fixed quotes, on-time handover.</p>
-
-  <div class="wa-wrap">
-    <a class="wa-btn" id="waHero"
-       href="https://api.whatsapp.com/send/?phone=15554703730&text=I+know+about+the+business&type=phone_number&app_absent=0"
-       target="_blank" rel="noopener">
-      <svg viewBox="0 0 32 32" fill="#fff" aria-hidden="true"><path d="M16 0C7.163 0 0 7.163 0 16c0 2.822.737 5.556 2.137 7.963L0 32l8.24-2.104A15.93 15.93 0 0 0 16 32c8.837 0 16-7.163 16-16S24.837 0 16 0zm0 29.09c-2.55 0-5.033-.686-7.2-1.984l-.517-.307-4.892 1.249 1.31-4.77-.337-.49A13.06 13.06 0 0 1 2.91 16C2.91 8.788 8.788 2.91 16 2.91 23.212 2.91 29.09 8.788 29.09 16S23.212 29.09 16 29.09zm7.17-9.78c-.393-.196-2.324-1.146-2.684-1.277-.36-.13-.622-.196-.884.197-.262.392-1.014 1.276-1.243 1.538-.229.262-.458.294-.85.098-.393-.196-1.658-.611-3.158-1.949-1.167-1.041-1.955-2.327-2.184-2.72-.229-.393-.024-.605.172-.8.176-.176.393-.458.59-.687.196-.229.261-.393.392-.655.13-.262.065-.49-.033-.687-.098-.196-.884-2.133-1.212-2.92-.319-.767-.643-.663-.884-.675-.229-.011-.49-.013-.752-.013-.262 0-.687.098-1.047.49-.36.393-1.374 1.343-1.374 3.276s1.407 3.8 1.604 4.063c.196.262 2.767 4.226 6.705 5.925.937.405 1.668.647 2.239.828.941.3 1.798.257 2.475.156.755-.113 2.324-.95 2.652-1.867.328-.917.328-1.703.23-1.867-.098-.163-.36-.262-.752-.458z"/></svg>
-      Chat on WhatsApp
-    </a>
-  </div>
-
-  <p class="hero-note">Free site visit &amp; quote &middot; Replies in minutes</p>
-
-  <div class="scroll-cue" aria-hidden="true">
-    <span>Scroll</span>
-    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
-  </div>
+<section class="hero-image" id="top">
+  <a href="https://wa.me/15554703730?text=I%20know%20about%20the%20business"
+     target="_blank"
+     rel="noopener">
+    <img src="a_one.png"> alt="A One Services">
+  </a>
 </section>
 
 <div class="tape-divider" role="presentation"></div>
