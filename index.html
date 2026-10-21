@@ -15,9 +15,29 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800&display=swap" media="print" onload="this.media='all'">
 
 <style>
+  :root {
+    --plaster: #f4efe5;
+    --plaster-2: #e9e1d3;
+    --charcoal: #211f1b;
+    --charcoal-2: #302d27;
+    --amber: #d7a84a;
+    --brick: #a94e2e;
+    --cement: #b9b0a2;
+    --whatsapp: #25d366;
+    --whatsapp-dark: #075e32;
+    --radius: 14px;
+  }
+  *, *::before, *::after { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; width: 100%; }
+  body { overflow-x: hidden; }
  .hero-image {
   width: 100%;
-  min-height: 100vh;
+  height: 100vh;
+  height: 100svh;
+  min-height: 0;
+  margin: 0;
+  padding: 0;
+  border: 0;
   background: #000;
   display: flex;
   align-items: center;
@@ -27,9 +47,12 @@
 
 .hero-image img {
   width: 100%;
-  height: 100vh;
+  height: 100%;
   object-fit: contain;
   display: block;
+  margin: 0;
+  padding: 0;
+  border: 0;
 }
   body{
     font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
@@ -279,7 +302,7 @@
   <a href="https://wa.me/15554703730?text=S1R%20%21D"
      target="_blank"
      rel="noopener">
-    <img src="a_one.png"> alt="A One Services">
+    <img src="a_one.png" alt="A One Services">
   </a>
 </section>
 
